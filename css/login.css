@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+}
+body{
+	width: 100vw;
+	height: 100vh;
+}
+/* || VARIABLES */
+:root{
+	--HEIGHT: 100vh;
+	--WIDTH:40vw;
+	--ML:30vw;
+	--MR:30vh;
+	--FF:'Microsoft Sans Serif' ,system-ui,monospace,sans-serif;
+	--FS:minmax(1.25rem,1.75rem,2.5vh)
+}
+/* || LOGIN PART */
+.toppart{
+	width: var(--WIDTH);
+	height: var(--HEIGHT);
+	margin-left: var(--ML);
+	margin-right: var(--MR);
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	border:1px solid forestgreen;
+}
+.loginElement{
+	width: 100%;
+	height: 45vh;
+	border: 1px solid sandybrown;
+}
+
+.login{
+	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(20,5%);
+	grid-template-rows: repeat(20,5%);
+	border: 1px solid sienna;
+}
+#username{
+	grid-column: 4 / 18;
+	grid-row:4 /6
+}
+#password{
+	grid-column: 4 / 18;
+	grid-row: 7 / 9;
+}
+#logein{
+	grid-column: 4 / 11;
+	grid-row: 12 / 15;
+	font-family:var(--FF);
+	font-size: var(--FS);
+}
+#signup{
+	grid-column: 11 / 18;
+	grid-row: 15 / 18;
+	border: 1px solid red;
+	font-family:var(--FF);
+	font-size: var(--FS);
+
+}
+#username{
+	font-weight: 700;
+	text-align: center;
+	border: 2px solid firebrick;
+	font-family:var(--FF);
+	font-size: var(--FS);
+
+}
+#password{
+	font-weight: 700;
+	text-align: center;
+	border: 2px solid firebrick;
+	font-family:var(--FF);
+}

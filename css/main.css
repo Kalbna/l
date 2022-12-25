@@ -1,0 +1,252 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+    
+}
+/* || MAIN GRID*/
+body{
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns:repeat(10,1fr);
+  grid-template-rows: repeat(10,1fr);
+}
+.header{
+  grid-column: 2 / 11;
+}
+.mainpart{
+  grid-column:2 /11 ;
+  grid-row:2 / 10;
+}
+.footer{
+  grid-column: 2 / 11;
+}
+.sidebar{
+  grid-row:1 / 12;
+}
+.header{
+  border: 1px solid firebrick;
+}
+.mainpart{
+  border: 1px solid forestgreen;
+}
+.sidebar{
+  width: 6vw;
+  height: 100%;
+  border:1px solid hotpink
+}
+.footer{
+  width: 94vw;
+  border: 1px solid khaki;
+}
+/* || MAIN SYSTEM*/
+.mainpart{
+  width: 100%;
+  height: 100%;
+  background-color: green;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  display: flex;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+.mainarea{
+  flex: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:94.5vw;
+  height:80vh;
+  scroll-snap-align: start;
+  
+}
+.mainarea:nth-of-type(1){
+  background-color: darkblue;
+}
+
+.mainarea:nth-of-type(2){
+  background-color: darkcyan;
+}
+
+.mainarea:nth-of-type(3){
+  background-color: gold;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* || SIDEBAR SYSTEM*/
+/* || FIX THE ISSUE FOR 99OPX ABOVE SCREEN   */
+.nav{
+  position: sticky;
+  height: 100vh;
+  /* width: 3rem; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  column-count: 1;
+  break-inside: avoid-column;
+  white-space:nowrap;
+  justify-content:center;
+  align-content: center;
+  gap: 2rem;
+}
+.navlink{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 30px;
+  height: 30px;
+ /*  margin-left:0.25rem ; */
+  background-color: sienna;
+  border: 1px solid indianred;
+  border-radius: 50%;
+}
+.links{
+  width: 30px;
+  height:30px;
+  text-align: center;
+  padding-top: 2px;
+  
+}
+.navlink a,a:visited,a:active{
+  text-decoration: none;
+  color:slategray;
+}
+
+.home{
+  background-color: lightcoral;
+  border: 1px double black;
+  border-radius: 50%;
+  background-image: url("../home.logo.png");
+  background-size: cover;
+}
+
+.gallery{
+  background-color: lightcoral;
+  border: 1px double black;
+  border-radius: 50%;
+  background-image: url("../home.logo.png");
+  background-size: cover;
+}
+
+.login{
+  background-color: lightcoral;
+  border: 1px double black;
+  border-radius: 50%;
+  background-image: url("../home.logo.png");
+  background-size: cover;
+}
+
+.contact{
+  background-color: lightcoral;
+  border: 1px double black;
+  border-radius: 50%;
+  background-image: url("../home.logo.png");
+  background-size: cover;
+}
+
+.aboutus{
+  background-color: lightcoral;
+  border: 1px double black;
+  border-radius: 50%;
+  background-image: url("../home.logo.png");
+  background-size: cover;
+}
+/* || ICON DISAPPER */
+
+.navlink:first-child{
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  top:0px;
+  left: 0px;
+  margin-left: 0px;
+}
+.icon{
+  width: 1px;
+  height:1px;
+
+}
+
+/* || FOOTER*/
+
+.footer{
+  position: sticky;
+}
+
+.bottempart{
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+  position: relative;
+  
+}
+
+.copyright{
+  background-color: teal;
+  font-size:0.60rem;
+}
+.copyright a,a:visited{
+  text-decoration: none;
+  color: black;
+}
+.create{
+  position: absolute;
+  font: inherit;
+  font-size: 0.30em;
+  top:2.75rem;
+  background-color: hotpink;
+}
+
+/* || HEADER SYSTEM*/
+
+
+.toppart{
+  position:sticky;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.jeen{
+  flex-grow: 1;
+  border:1px solid gold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+.heading{
+  flex-grow: 5;
+  border:1px solid gold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.balaji{
+  flex-grow: 1;
+  border:1px solid gold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
